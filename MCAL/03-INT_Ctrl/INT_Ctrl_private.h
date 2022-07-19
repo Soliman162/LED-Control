@@ -1,0 +1,36 @@
+#ifndef INT_CTRL_PRIVATE_H
+#define INT_CTRL_PRIVATE_H
+
+#define    STACK_4_BYTE_ALIGNED     0
+#define    STACK_8_BYTE_ALIGNED     1
+
+
+#define     ENABLE      1
+#define     DISABLED    0
+
+#define NMI_INT_BIT     31
+#define ISR_PED_CHECK_BIT   22
+
+#define USAGE_FAULT_ENABLE_BIT  18
+#define BUS_FAULT_ENABLE_BIT    17
+#define MEMORY_MANAGMEDNT_FAULT_ENABLE_BIT  16
+
+#define SVC_CALL_PENDING_BIT    15
+#define BUS_FAULT_PENDING_BIT   14
+#define MEMORY_MANAGMENT_FAULT_PENDING_BIT  13
+#define USAGE_FAULT_PENDING_BIT             12
+
+#define SYSTEM_RESET_BIT    2
+
+#define APINT_REG_KEY       0x05FA0000
+
+#define SV_INT_SET_PED_BIT  28
+#define SV_INT_CLR_PED_BIT  27
+
+#define SYS_TICK_SET_PED_BIT    26
+#define SYS_TICK_CLR_PED_BIT    25
+
+
+
+
+#endif
