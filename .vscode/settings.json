@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "tm4c123gh6pm.h": "c",
-        "dio_interface.h": "c"
+        "dio_interface.h": "c",
+        "gpt_interface.h": "c",
+        "gpt_private.h": "c"
     }
 }

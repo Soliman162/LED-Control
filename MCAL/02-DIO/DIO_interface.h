@@ -88,6 +88,7 @@ typedef enum{
     PULL_UP,
     PULL_DOWN,
     SLEW_RATE,
+    NOT_USED
 
 }PIN_INTERNAL_ATTACHMENT_TYPE;
 
@@ -101,7 +102,6 @@ typedef struct{
 }PORT_CONFIG_TYPE;
 
 void DIO_voidInit_Pin(const PORT_CONFIG_TYPE *Copy_Pin);
-
 void DIO_voidWriteChannel(DIO_CHANNEL_TYPE Copy_enumChannel, DIO_LEVEL_TYPE Copy_enumLevel_type);
 
 

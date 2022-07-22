@@ -4,8 +4,6 @@
 
 #include "GPT_interface.h"
 #include "GPT_private.h"
-#include "GPT_config.h"
-
 
 static GPT_REGs_CONFIG *GPT_ARR[12] = {  GPT0_16_32_BIT_REGs,GPT1_16_32_BIT_REGs,
                                         GPT2_16_32_BIT_REGs,GPT3_16_32_BIT_REGs
@@ -144,8 +142,6 @@ void GPT_voidEnableInterrupt(const GPT_CONFIG_TYPE *Copy_type,void (*ISR_ptrAddr
 	}
    GPT_ARR[Copy_type->Channel_ID]->GPTMIMR |= 1;
 }
-
-
 
 void CLR_voidInterrupt_Flag(const GPT_CONFIG_TYPE *Copy_type)
 {
