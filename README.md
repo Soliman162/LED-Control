@@ -18,6 +18,6 @@ This function implements implicitly the PWM module using Timer Overflow.
 3. Creating a Timer Overflow ISR that performs the required functionality
 4. Passing the ISR as a callback function from App Layer to Timer driver in MCAL layer
 
-# For Timer Driver
+# For NVIC Driver
 1. Creating the Interrupt driver from scratch using the sufficient interface, configure, private and program files
 2. Create functions in Interrupt driver that are needed to perform the required project functionality
